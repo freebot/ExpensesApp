@@ -140,7 +140,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           )
         : AppBar(
-            title: Text('Gastos personales', style: Theme.of(context).textTheme.title,),
+            title: Text(
+              'Gastos personales',
+              style: Theme.of(context).textTheme.title,
+            ),
             actions: <Widget>[
               IconButton(
                 icon: Icon(Icons.add),
@@ -165,7 +168,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text('Mostrar tabla'),
+                  Text(
+                    'Mostrar tabla',
+                    style: Theme.of(context).textTheme.title,
+                  ),
                   Switch.adaptive(
                     activeColor: Theme.of(context).accentColor,
                     value: _showChart,
